@@ -2,7 +2,6 @@ class ItemsController < ApplicationController
   
   def index
     @items = Item.all
-    binding.pry
     @recipes = RecipesService.get_recipes(nil)
 
   end
